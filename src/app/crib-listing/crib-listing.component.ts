@@ -1,4 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { cribs} from './../data/cribs';
+
 
 @Component({
   selector: 'app-crib-listing',
@@ -7,10 +9,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class CribListingComponent implements OnInit {
+	cribs: Array<any> = cribs;
+
+	@Input('crib') crib;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+ }
