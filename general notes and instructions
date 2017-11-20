@@ -1,0 +1,3 @@
+Typescript is a superset of ES5 and ES6 which is built on top of javascript. It is created by microsoft and allows type information in javascript.
+
+When defining a variable  in a function in Javascript, throws an error/exception if a non-matched typed variable is called. It can be avoided in typescript by declaring the type of the variable(in function).
