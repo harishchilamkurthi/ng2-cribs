@@ -1,3 +1,40 @@
 Typescript is a superset of ES5 and ES6 which is built on top of javascript. It is created by microsoft and allows type information in javascript.
 
 When defining a variable  in a function in Javascript, throws an error/exception if a non-matched typed variable is called. It can be avoided in typescript by declaring the type of the variable(in function).
+JS: Example: 
+function multiply(x,y){
+return x*y;
+}
+multiply(2,3);
+output: 2*3=6
+
+But if a string is passed instead of numbers in the variables, throws undefined. and this exceptions is seen only when the application is run, which can be tricky at times.
+
+to avoid this we use TS:
+TS example.
+function multiple(x:number, y:number){ //x:any, y:any will help in passing any value
+return x*y;
+}
+multiply(2,3);
+
+In this case, wen a string is passed, before running the application the IDE shows red underline which is an indication of exception which saves a lot of time.
+
+let person:string; //defining
+person =4; //shows red underline
+person = 'bob';
+
+
+-> to convert a typical typescript file to javascript file, use tsc command in the same project folder.
+-> conversion of typescript file to javascript file is called Transpolation. TS---->JS.
+
+To start an angular project: 
+1. install node and type  
+							npm install -g @angularcli // installs node js from command line along with required angular libraries from @angularcli.
+2. to start a project:
+							ng new ng2-cribs // ng2-cribs is the project name and this command helps in creating a new project with all necessary files imported from @angularcli
+3. to run the project:
+							ng serve
+
+-> import @angular/forms                import @angular/http     are some of the individual packages which has various modules.
+
+-> a component is something whih has specific functionalities like template,, view or its own styles.
