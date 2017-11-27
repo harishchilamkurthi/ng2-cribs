@@ -74,4 +74,8 @@ now, we are passing the crib as input.
 so, go to crib.listing.component.ts and add Input in imports.
 
 
-
+PROPERTY BINDING:
+-> Is angular 2 concept and be used in [], and we say we want to bind a property called crib and we want to poass a local vairable in to it(crib-listing.component.html) and that is picked up in crib-card.component.ts as decorator and assign it to a local property called criba nd can be used in html.
+-> Because the code in crib-listing.componenet.css belongs to crib-card.componenet.css, we paste it in there and everything works the same.
+-> lets assume that we dont knw what is going on with the values, like what values each item has, lets see if we want to use or get the number of bedrooms or kitchens, but the kitchens information is not present in our data.
+-> Typescript guives us really explicit abut what kind of data should exist on crib property, which can be done by INTERFACE concept.
