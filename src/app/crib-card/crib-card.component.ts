@@ -17,10 +17,14 @@ export class CribCardComponent implements OnInit {
 			//now the entire application is running on crib-card.component.ts and can be resued anywhere in the applciation.
 	
   constructor() { }
+ //lets assume that we dont knw what is going on with the values, like what values each item has, lets see if we want to use or get the number of bedrooms or kitchens,
 
   ngOnInit() {
   	let bedrooms = this.crib.bedrooms;
-  	let kitchens = this.crib.kitchens;
+  	let kitchens = this.crib.kitchens; //challenge is, we dont have kitchen property information in our data.
+  
+  // Typescript guives us really explicit abut what kind of data should exist on crib property, which can be done by INTERFACE concept.
+
   }
 
 }
