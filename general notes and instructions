@@ -40,9 +40,20 @@ To start an angular project:
 -> a component is something whih has specific functionalities like template,, view or its own styles.
 
 
-To Create a new COMPONENT:
+TO CREATE A NEW COMPONENT:
 -> open cmd and goto project folder and type <ng g component crib-listing>
 Syntax: ng g component <component name>   //ng denotes angular2 || g is to generate
 -> the above cmd creates 4 files(imports and adds to the declarations array in app.module.ts) with .css, .html, .specs.ts, .ts
 
 
+TO INSTALL BOOTSTRAP TO OUR PROJECT:
+goto cmd, and go to project folder, type 
+			<npm install bootstrap --save>
+	and save that to <package.json> file.
+REGISTERING TO ANGULAR CLI CONFIGURATION.
+goto <angular-cli.json> file and find "styles":
+	"style":[
+		 "style.css",
+		 "../node_modules/bootstrap/dist/css/bootstrap.min/css"]
+	this is the cli which we get from angular website.	 
+		 
