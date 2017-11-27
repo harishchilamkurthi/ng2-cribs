@@ -79,3 +79,12 @@ PROPERTY BINDING:
 -> Because the code in crib-listing.componenet.css belongs to crib-card.componenet.css, we paste it in there and everything works the same.
 -> lets assume that we dont knw what is going on with the values, like what values each item has, lets see if we want to use or get the number of bedrooms or kitchens, but the kitchens information is not present in our data.
 -> Typescript guives us really explicit abut what kind of data should exist on crib property, which can be done by INTERFACE concept.
+
+INTERFACES:
+Interfaces is a class that is foinf to describe how something should be shaped(like what kind of keys or values that is should contain).
+
+CREATE AN INTERFACE:
+	ng g interface <interface_name><enter>
+	ng g interface crib
+    //an interface file will be created in src/app/ location with the name crib.ts	
+	
