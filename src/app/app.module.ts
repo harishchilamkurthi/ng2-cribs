@@ -17,6 +17,6 @@ import { CribCardComponent } from './crib-card/crib-card.component';
     BrowserModule
   ],
   providers: [], // any injectable services that we create
-  bootstrap: [AppComponent] 
+  bootstrap: [AppComponent] // main component is bootstrapped
 })
 export class AppModule { }
