@@ -11,7 +11,7 @@ output: 2*3=6
 But if a string is passed instead of numbers in the variables, throws undefined. and this exceptions is seen only when the application is run, which can be tricky at times.
 
 to avoid this we use TS:
-TS example.
+TS example:
 function multiple(x:number, y:number){ //x:any, y:any will help in passing any value
 return x*y;
 }
@@ -47,13 +47,15 @@ Syntax: ng g component <component name>   //ng denotes angular2 || g is to gener
 
 
 TO INSTALL BOOTSTRAP TO OUR PROJECT:
-goto cmd, and go to project folder, type 
+->goto cmd, and go to project folder, type 
 			<npm install bootstrap --save>
 	and save that to <package.json> file.
 REGISTERING TO ANGULAR CLI CONFIGURATION.
-goto <angular-cli.json> file and find "styles":
+->goto <angular-cli.json> file and find "styles":
 	"style":[
 		 "style.css",
 		 "../node_modules/bootstrap/dist/css/bootstrap.min/css"]
 	this is the cli which we get from angular website.	 
 		 
+-> so far, we have everything to run this project.
+-> so restart the project and run it.
