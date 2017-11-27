@@ -13,7 +13,7 @@ import { CribCardComponent } from './crib-card/crib-card.component';
     CribListingComponent,
     CribCardComponent
   ],
-  imports: [
+  imports: [  //this is where we assign our import list.
     BrowserModule
   ],
   providers: [],
