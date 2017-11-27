@@ -1,5 +1,5 @@
 export const cribs = [
-{
+{ // data is from cribs.json
 "id": 1,
 "type": "Condo",
 "price": 220000,
