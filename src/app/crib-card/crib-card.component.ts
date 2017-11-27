@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Input} from '@angular/core';
-
+// Input is a class that comes from @angular/core and we used that as decorator.
 @Component({
   selector: 'app-crib-card',
   templateUrl: './crib-card.component.html',
