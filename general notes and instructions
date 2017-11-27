@@ -38,3 +38,4 @@ To start an angular project:
 -> import @angular/forms                import @angular/http     are some of the individual packages which has various modules.
 
 -> a component is something whih has specific functionalities like template,, view or its own styles.
+Angular application should have one root module(distinctive functionalities) bootstraps the application.
