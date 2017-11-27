@@ -63,6 +63,6 @@ REGISTERING TO ANGULAR CLI CONFIGURATION.
 -> But, what if we want to reuse the same html for different area of application?
  |-> for that we will create a new dedicated component that is responsible for displaying the data.
  
-CREATING A NEW COMPONENET:
+create new componenet.
 -> ng g componenent crib-card //ng g componenent <component_name>
-
+copy the entire code from class thumbnailm from crib-listing.component.html file to crib-card.componenet.html 
