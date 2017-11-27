@@ -70,3 +70,8 @@ copy the entire code from class thumbnailm from crib-listing.component.html file
 now the challenge is, we can only see the empty grid with no data populated in it.
 We can fix that with Property binding. let us pass the data into components.
 
+now, we are passing the crib as input.
+so, go to crib.listing.component.ts and add Input in imports.
+
+
+
