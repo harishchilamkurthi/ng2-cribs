@@ -16,7 +16,7 @@ import { CribCardComponent } from './crib-card/crib-card.component';
   imports: [  //this is where we assign our import list.
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], // any injectable services that we create
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }
