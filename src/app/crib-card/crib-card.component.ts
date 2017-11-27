@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, Input} from '@angular/core';
 // Input is a class that comes from @angular/core and we used that as decorator.
+import {Crib} from './..crib'; //Crib is interface which starts with capital case and crib is importing the data from crib.ts file which has json data.
+
 @Component({
   selector: 'app-crib-card',
   templateUrl: './crib-card.component.html',
@@ -8,13 +10,15 @@ import { Component, OnInit, ViewEncapsulation, Input} from '@angular/core';
 })
 export class CribCardComponent implements OnInit {
 
-	@Input('crib') crib:any; //@Input('crib') 	     crib:any;
+	//@Input('crib') crib:any; //@Input('crib') 	     crib:any;
 			//		     |
 			//	 inputing property value to local property	
 			// we are inputing a property value('crib') to local property called crib and asssigning type as any.
 			//i.e., any given value passed as property value will be inputed to local property as ANY in out view (crib-card.component.html) which is crib.price, crib.type etc.
   			
 			//now the entire application is running on crib-card.component.ts and can be resued anywhere in the applciation.
+
+	@Input('crib') crib:Crib; //crib is local property and Crib is interface.
 	
   constructor() { }
  //lets assume that we dont knw what is going on with the values, like what values each item has, lets see if we want to use or get the number of bedrooms or kitchens,
