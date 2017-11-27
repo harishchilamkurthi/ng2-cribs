@@ -1,9 +1,13 @@
-<div *ngFor="let crib of cribs">   //this loops the item. here cribs is local variable and cribs is collection.
-    <h3> {{crib.address}} </h3>  //this displays the addresses of each item in cribs array/json file.
+<div *ngFor="let crib of cribs" class="col-sm-4">  //this loops the item. here cribs is local variable and cribs is collection.
+    //<h3> {{crib.address}} </h3>  //this displays the addresses of each item in cribs array/json file.
 
 // here, we used ngFor directive which loops the condition specified(targetting all the addresses in cribs collection using crib local variable), instead of writing all the addresses individually.
 // we can also target other elements like price and type.
 
-    <h4> {{crib.price}} </h4>
-    <h4> {{crib.type}} </h4>
+    //<h4> {{crib.price}} </h4>
+    //<h4> {{crib.type}} </h4>
+    <div class ="caption" >
+        <div *ngIf = "!crib.showDetails"> //*ngIf is a directive which is used conditionally to hide and show various elements
+        </div>    
+    </div>    
   </div>
