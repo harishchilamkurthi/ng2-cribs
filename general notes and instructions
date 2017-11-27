@@ -88,3 +88,4 @@ CREATE AN INTERFACE:
 	ng g interface crib
     //an interface file will be created in src/app/ location with the name crib.ts	
 	
+-> once and interface is created, let us define some data in it. and this should be imported in crib-card.component.ts file to call it.
