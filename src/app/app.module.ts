@@ -7,8 +7,8 @@ import { CribListingComponent } from './crib-listing/crib-listing.component';
 import { CribCardComponent } from './crib-card/crib-card.component';
 
 
-@NgModule({
-  declarations: [
+@NgModule({ //point 1
+  declarations: [  
     AppComponent,
     CribListingComponent,
     CribCardComponent
