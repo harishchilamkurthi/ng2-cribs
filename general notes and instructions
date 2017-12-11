@@ -124,4 +124,13 @@ BELOW ARE FEW DIFFERENT WAYS TO HANDLE ASYNCHRONOUS OPERATIONS.
 	we can use that with operator from RXJS library called MAP(helps in transforming the data which comes from http request to json file format). 
 	
 	lets say, we are getting and error? lets put that in a separate error file.(cribs-listing.component.ts)
-	
+
+->With this we are getting everything from http request. But, we are supposed to use SERVICES to get this data.
+SERVICES:-
+-> services has many advantages and the main is REUSABILITY.
+-> let us create a service that gives access to our http request and it can be resued.
+ |-> create a new directory called services in app folder, enter that folder and create a new service with below cmd.
+ 			ng g service cribs //cribs is the name of the service
+			
+
+
