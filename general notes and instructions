@@ -131,6 +131,13 @@ SERVICES:-
 -> let us create a service that gives access to our http request and it can be resued.
  |-> create a new directory called services in app folder, enter that folder and create a new service with below cmd.
  			ng g service cribs //cribs is the name of the service
-			
+	|-> when a service is created, it created 4 files. cribs.service.ts file has @Injectable() decorator which injects using the concept of dependency injection.
+	FOR EXAMPLE: Http class that comes with angular makes use of constructor to inject in component.
+	--> same goes with SERVICES, it is going to be injectable and we can get it using dependency injection system.
 
+NOTE: While creating a service, we get a message saying "service created but not provided", i.e., we have to come to app.module.ts and within provider keys in @NgModule, we have to say that we want to use(get) this service.
+providers: [CribsService].....and have to import it ....... import {CribsService} from './services/cribs.service';
+
+-> lets create a method in our cribs.service.ts which will fetch(get) the data in json format using map from rxjs library.
+-> now this service is ready to use. Lets make use of the components. crib-listing.component.ts.
 
