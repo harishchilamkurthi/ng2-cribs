@@ -27,7 +27,7 @@ export class CribListingComponent implements OnInit { //
 	      .map(res=>res.json())
 	  //http request goes out, we get request from data/cribs.json file and what ever comes back will be MAPped to json file and the result will be SUBSCRIBE.
 	      .subscribe( 
-		  data => console.log(data)
+		  data => this.cribs = data //cribs is the local property which we used earlier.
 		  );
 	  }
 
