@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http'; //imports http class from angular core.
 import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/map'; //importing the map and other functions from rxjs library.
+
 
 @Injectable()
 export class CribsService {
@@ -12,6 +14,8 @@ export class CribsService {
 
   getAllCribs() {
     return this.http.get('data/cribs.json')
+      // we will map this http request before it actually returns in json format in crib-listing.component.ts before we subscribe it.
+               .map(res => res.json());
   }
 
   addCrib(data) {
