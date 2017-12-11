@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CribsService} from './services/cribs.service'; //CribsService will be used through out the application.
 import { CribListingComponent } from './crib-listing/crib-listing.component';
 import { CribCardComponent } from './crib-card/crib-card.component';
 
@@ -17,7 +18,8 @@ import { CribCardComponent } from './crib-card/crib-card.component';
     BrowserModule,
     HttpModule
   ],
-  providers: [], // any injectable services that we create
+  //providers: [], // any injectable services that we create
+  providers: [CribsService], //service that is created should be provided.
   bootstrap: [AppComponent] // main component is bootstrapped
 })
 export class AppModule { }
