@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { CribListingComponent } from './crib-listing/crib-listing.component';
@@ -14,7 +14,8 @@ import { CribCardComponent } from './crib-card/crib-card.component';
     CribCardComponent
   ],
   imports: [  //this is where we assign our import list.
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [], // any injectable services that we create
   bootstrap: [AppComponent] // main component is bootstrapped
