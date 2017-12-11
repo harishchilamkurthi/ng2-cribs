@@ -100,5 +100,9 @@ Summary So far:
 
 USE OF HTTP REQUEST:- (angulars HTTP implementation):-
 
-let us move the data folder a level up into src folder and rename cribs.ts to cribs.json and remove export const cribs.
+-> let us move the data folder a level up into src folder and rename cribs.ts to cribs.json and remove export const cribs.
+	// the reason is when we use http to get some data from server, generally we get it back in json format. JSON gives the compact way of recieving data and we will be able to use it very easily in javascript application.
+
+-> Before we make HTTP request call to our data, we have to let our angular cli knon where it is. For that we have to add it to our assets array in angular-cli.json.
+
 
