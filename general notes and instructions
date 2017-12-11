@@ -141,3 +141,8 @@ providers: [CribsService].....and have to import it ....... import {CribsService
 -> lets create a method in our cribs.service.ts which will fetch(get) the data in json format using map from rxjs library.
 -> now this service is ready to use. Lets make use of the components. crib-listing.component.ts.
 
+-> we dont need map function any longer in our currect component because we are making use of the map function which is already present in the newly created service.
+
+Summary So far:
+-> Now that the service logic is complete, we can reuse this logic in multiple places, instead of using the same logic again and again, we will reuse it.
+-> If we have all the http logic in a service, it is easy to test these calls.
