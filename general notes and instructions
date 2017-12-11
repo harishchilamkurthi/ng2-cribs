@@ -89,3 +89,6 @@ CREATE AN INTERFACE:
     //an interface file will be created in src/app/ location with the name crib.ts	
 	
 -> once and interface is created, let us define some data in it. and this should be imported in crib-card.component.ts file to call it.
+-> whenever an interface is created, it needs to be defined. here we are importing in crib-card.component.ts
+
+
