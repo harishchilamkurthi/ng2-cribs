@@ -91,4 +91,10 @@ CREATE AN INTERFACE:
 -> once and interface is created, let us define some data in it. and this should be imported in crib-card.component.ts file to call it.
 -> whenever an interface is created, it needs to be defined. here we are importing in crib-card.component.ts
 
+Summary So far:
+-> we have got all the data in cribs.ts in data folder. we have got constant type called cribs and we are exporting and the wat that is committed now is in our cribs-listing.component.ts.
+-> we import cribs which is set of data and we assign it to local member(cribs: Array<any> = cribs;) which is going to give all the data we need for our application so far.
+
+-> In real world, we will make a http request for this data when the application starts or when the component is initialized, because we are implementing OnInit.
+	ngOnInti(){ //make http request }
 
