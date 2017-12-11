@@ -98,3 +98,7 @@ Summary So far:
 -> In real world, we will make a http request for this data when the application starts or when the component is initialized, because we are implementing OnInit.
 	ngOnInti(){ //make http request }
 
+USE OF HTTP REQUEST:- (angulars HTTP implementation):-
+
+let us move the data folder a level up into src folder and rename cribs.ts to cribs.json and remove export const cribs.
+
