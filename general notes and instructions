@@ -146,3 +146,11 @@ providers: [CribsService].....and have to import it ....... import {CribsService
 Summary So far:
 -> Now that the service logic is complete, we can reuse this logic in multiple places, instead of using the same logic again and again, we will reuse it.
 -> If we have all the http logic in a service, it is easy to test these calls.
+
+-> Now that our application is up and running and all the data is coming from json file, lets create a FORM to add new listing if needed.
+		let us create a new component for that.
+		
+		ng g component add-listing-form
+		
+
+
