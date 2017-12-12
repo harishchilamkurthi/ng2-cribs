@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CribsService} from './services/cribs.service'; //CribsService will be used through out the application.
 import { CribListingComponent } from './crib-listing/crib-listing.component';
 import { CribCardComponent } from './crib-card/crib-card.component';
-
+import { FormModule } from '@angular/forms';
 
 @NgModule({ //point 1
   declarations: [  //whenever we create a new component, we declare here in decorator.
@@ -16,7 +16,8 @@ import { CribCardComponent } from './crib-card/crib-card.component';
   ],
   imports: [  //this is where we assign our import list.
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormModule
   ],
   //providers: [], // any injectable services that we create
   providers: [CribsService], //service that is created should be provided.
