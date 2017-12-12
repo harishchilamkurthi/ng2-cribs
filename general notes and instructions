@@ -175,3 +175,12 @@ EXPLAINING THE FORM:
  |-> when we pass the values to onCribSubmit method. 
  |-> we are going to get one OBJECT value and one of the KEYS is ADDRESS, which is going to be the address of key that we are going to put in to this element.
 
+ |-> In property type, we have got a single type option element with in our select.
+ 	|-> In traditional html select elements, we will give each and every element an option to be in that list;
+		but here we are taking advantage of
+				*ngFor    --> repeater
+		and TEMPLATE OUT set og values that are in the COLLECTION(PROPERTY TYPES)
+	Note: we have to initialize the property type in our component class.
+ |-> the SUBMIT button in the form will trigger the ngSubmit event defaultly.	
+
+ 
