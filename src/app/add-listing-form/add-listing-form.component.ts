@@ -12,6 +12,7 @@ export class AddListingFormComponent implements OnInit {
 
   @ViewChild('newCribForm') newCribForm: NgForm;
   propertyTypes: Array<string> = ['Condo', 'Duplex', 'House'];
+  //all the data comes from newCribsForm.value - values:object
 
   constructor(
     private cribsService: CribsService,
