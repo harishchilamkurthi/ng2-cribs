@@ -18,9 +18,7 @@ export class CribsService {
                .map(res => res.json());
   }
 
-  addCrib(data) {
-    data.image = 'default-crib';
-    this.newCribSubject.next(data);
+  addCrib() { //is the method used to communicate between the components
   }
 
 }
