@@ -153,4 +153,15 @@ Summary So far:
 		ng g component add-listing-form
 		
 
+add-listing-componenet.html:
+
+#newCribForm - template variable(a template variable is denoted by # symbol) - sets the top level form group.
+
+with angular forms, we can,
+1. track whether the form is valid or not
+2. get the individual values from input elements in the form.
+
+Note: if it is jquerry, we have to take the values explicitly, we have to write the js code to capture the values and later can be manipulated.
+but in angular, we can do that just by creating a TEMPLATE VARIABLE.
+
 
