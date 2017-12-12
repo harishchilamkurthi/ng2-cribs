@@ -21,9 +21,8 @@ export class AddListingFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onCribSubmit(data) {
-    this.cribsService.addCrib(data);
-    this.newCribForm.reset();
-  }
+  onCribSubmit(data) : void { // returns nothing for now
+    console.log(data);
+    }
 
 }
