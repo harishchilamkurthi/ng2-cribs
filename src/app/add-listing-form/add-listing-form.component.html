@@ -5,7 +5,10 @@
 
   <div class="panel-body">
 
-    <form #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)"> //#newCribForm is a template variable..template variable is denoted by # symbol.
+    <form #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)"> 
+      //#newCribForm is a template variable..template variable is denoted by # symbol.
+      //ngSubmit : event binding - to onCribSubmit method and we are taking the values of each element(newCribform) that is going to be passed
+
       <div class="form-group col-sm-4">
         <label for="address" class="">Address</label>
         <input
