@@ -183,9 +183,10 @@ EXPLAINING THE FORM:
 	Note: we have to initialize the property type in our component class.
  |-> the SUBMIT button in the form will trigger the ngSubmit event defaultly.	
 
- DECLARE THE FORM IN ROOT MODULE:
+DECLARE THE FORM IN ROOT MODULE:
  -> we need to declare the form in app.module.ts
  	1. import from angular/forms
 	2. add the FormsModule in imports declaration
 
- 
+ADDING NEW ATTRIBUTE TO EXISTING LISTING:
+-> propertyTypes: Array<string> = ['House','Condo','Duplex'];
