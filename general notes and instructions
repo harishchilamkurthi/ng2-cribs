@@ -207,6 +207,7 @@ The challenge is to make them talk to each other.
 	-> we already have the method called getAllCribs().
 	
 	let us create another method which would communicate between those two components.
+		addCrib(){}                --------in crib.service.ts
 
 
 
