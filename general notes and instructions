@@ -152,7 +152,7 @@ Summary So far:
 		
 		ng g component add-listing-form
 		
-
+SETTING UP THE FORM TEMPLATE:
 add-listing-componenet.html:
 
 #newCribForm - template variable(a template variable is denoted by # symbol) - sets the top level form group.
@@ -190,3 +190,26 @@ DECLARE THE FORM IN ROOT MODULE:
 
 ADDING NEW ATTRIBUTE TO EXISTING LISTING:
 -> propertyTypes: Array<string> = ['House','Condo','Duplex'];
+
+COMMUNICATING BETWEEN THE COMPONENETS: 
+
+->Lets say, we want data to be added to arry of listings that we got in our application.
+->This array of listings is in cribs-listing.component.ts
+		Cribs:Array
+	which is populated by cribsService and called by getAllCribs() method.
+	|-> Once it is called, we substring the result that comes from it and 
+	|-> we are populating the cribs array with data that comes back.
+	
+The data that comes from form submit (onCribSubmit - which is in add-listing-form.component.ts) in to this array
+we are dealing with two different componenets(crib-listing-components and add-listing-form). 
+The challenge is to make them talk to each other.
+	-> we are going to do that with Services that we have already created(cribs.service.ts)
+	-> we already have the method called getAllCribs().
+	
+	let us create another method which would communicate between those two components.
+
+
+
+
+
+
