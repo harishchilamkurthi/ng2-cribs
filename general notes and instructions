@@ -164,4 +164,14 @@ with angular forms, we can,
 Note: if it is jquerry, we have to take the values explicitly, we have to write the js code to capture the values and later can be manipulated.
 but in angular, we can do that just by creating a TEMPLATE VARIABLE.
 
+EXPLAINING THE FORM:
+<form #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)"> 
+1. #newCribForm : template variable
+2. ngSubmit : event binding - to onCribSubmit method and we are taking the values of each element(newCribform) that is going to be passed
+3. newCribForm : we are taking the values that come from here and those values are the values that come from each value in input element.
+4. onCribSubmit: method in component class
+5. value : Object
+6. ngModel : directive - we have to mark for any of the inputs that we want to be part of this form, i.e., all inputs, text areas, elements.
+ |-> when we pass the values to onCribSubmit method. 
+ |-> we are going to get one OBJECT value and one of the KEYS is ADDRESS, which is going to be the address of key that we are going to put in to this element.
 
