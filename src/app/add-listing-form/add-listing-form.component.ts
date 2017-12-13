@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core'; 
 import { NgForm } from '@angular/forms';
 import { CribsService } from './../services/cribs.service';//imports from recently created service
 import { UtilService } from './../services/util.service';
@@ -10,7 +10,7 @@ import { UtilService } from './../services/util.service';
 })
 export class AddListingFormComponent implements OnInit {
 
-  @ViewChild('newCribForm') newCribForm: NgForm;
+  @ViewChild('newCribForm') newCribForm: NgForm; //from our template
   propertyTypes: Array<string> = ['Condo', 'Duplex', 'House'];
   //all the data comes from newCribsForm.value - values:object
 
@@ -25,6 +25,7 @@ export class AddListingFormComponent implements OnInit {
   onCribSubmit(data) : void { // returns nothing for now
     this.cribsService.addCrib(data); //adding cribs service from crib method
                              //data that comes from form
+    this.newCribForm.reset(); // resets the existing form
     }
 
 }
