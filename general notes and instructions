@@ -234,5 +234,15 @@ it goes from 			add-listing-form.component.ts -> cribs.services.ts -> crib-listi
 
 now that we are getting our data from console.log, lets add the data to our array.
 
-Now that our newly added listing is working good, if we want that to be added we can use SPREAD OPERATOR.
-
+SPREAD OPERATOR:
+-> Now that our newly added listing is working good, if we want that to be added we can use SPREAD OPERATOR.
+-> denoted as ...
+     		 data => this.cribs = [data, ...this.cribs]
+			//data-> new data that comes from subscription
+		  	//... is spread operator. spread on existing data in cribs array.
+			
+The new challenge is, when the form is submitted, the data in the form is not getting cleared.
+	this can be done in add-listing.form.component.ts
+ |-> after addCrib() is called, we want the form to be cleared. for that we have to get hold on form in component class.
+ |-> we have to call ViewChild decorator.
+ 	this.newCribForm.reset();  //resets the existing form
