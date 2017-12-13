@@ -34,6 +34,14 @@ export class CribListingComponent implements OnInit { //
 		  data => this.cribs = data, //cribs is the local property which we used earlier.
 		  error => this.error = error.statusText //error is local property
 	  );
+	  
+	  this.cribsService.newCribSubject.subscribe(
+		//data = > console.log(data) 
+		//now that we are getting our data from console.log, lets add the data to our array.
+		this.cribsService
+		    .newCribSubject
+		    .subscribe(data => this.crib.push(data))
+	  )
 	  }
 
  }
