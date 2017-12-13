@@ -200,9 +200,9 @@ COMMUNICATING BETWEEN THE COMPONENETS:
 	|-> Once it is called, we substring the result that comes from it and 
 	|-> we are populating the cribs array with data that comes back.
 	
-The data that comes from form submit (onCribSubmit - which is in add-listing-form.component.ts) in to this array
-we are dealing with two different componenets(crib-listing-components and add-listing-form). 
-The challenge is to make them talk to each other.
+-> The data that comes from form submit (onCribSubmit - which is in add-listing-form.component.ts) in to this array
+-> we are dealing with two different componenets(crib-listing-components and add-listing-form). 
+-> The challenge is to make them talk to each other.
 	-> we are going to do that with Services that we have already created(cribs.service.ts)
 	-> we already have the method called getAllCribs().
 	
@@ -210,7 +210,13 @@ The challenge is to make them talk to each other.
 		addCrib(){}                --------in crib.service.ts
 
 
+-> we subscribed the result that comes from getAllCribs(), the same way we are going to use something called SUBJECT that comes from rxjs library.
 
+NOTE: RXJS:- 
+	  1. a reactive extension javascript library mainly used to make use of observables in js apps.
+	  2. which is widely used in angular 2, but this really is not a angular library.
+	  we saw that in getAllCribs() because this.http.get calls in angular 2 which will return an observable.
+	  As a result we can subscribe them for results in cribs-listing.componenet.ts
 
 
 
