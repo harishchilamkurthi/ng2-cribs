@@ -38,10 +38,14 @@ export class CribListingComponent implements OnInit { //
 	  this.cribsService.newCribSubject.subscribe(
 		//data = > console.log(data) 
 		//now that we are getting our data from console.log, lets add the data to our array.
-		this.cribsService
-		    .newCribSubject
-		    .subscribe(data => this.crib.push(data))
-	  )
+		//this.cribsService
+		//    .newCribSubject
+		//    .subscribe(data => this.crib.push(data))
+	  
+	  	data => this.cribs = [data, ...this.cribs]
+		  //data-> new data that comes from subscription
+		  //... is spread operator. spread on existing data in cribs array.
+	  );
 	  }
 
  }
