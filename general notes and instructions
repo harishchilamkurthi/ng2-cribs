@@ -233,3 +233,6 @@ so thats the communication bus.
 it goes from 			add-listing-form.component.ts -> cribs.services.ts -> crib-listing.component.ts
 
 now that we are getting our data from console.log, lets add the data to our array.
+
+Now that our newly added listing is working good, if we want that to be added we can use SPREAD OPERATOR.
+
