@@ -224,3 +224,12 @@ SUBJECT:
 -> basically it is the way that we can set the bahaviour that is like an observable but we cak also subscribe as an observer.
 Note: Observables are to observe the values of data over time.
 
+The flow is, when we are submitting our form we are calling our service and we are sending the data that comes from the form to the service.
+
+we are calling or addCrib which is our service crib.service.ts is calling or next methiod on the subject that we have set up.
+
+because the subject is both observer and observalbe,, we can call next on it and we can observe that data coming through in our crib-listing.component.
+so thats the communication bus.
+it goes from 			add-listing-form.component.ts -> cribs.services.ts -> crib-listing.component.ts
+
+now that we are getting our data from console.log, lets add the data to our array.
