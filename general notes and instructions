@@ -218,5 +218,9 @@ NOTE: RXJS:-
 	  we saw that in getAllCribs() because this.http.get calls in angular 2 which will return an observable.
 	  As a result we can subscribe them for results in cribs-listing.componenet.ts
 
-
+SUBJECT:
+-> an Observable and a Subject (which is a type of observable) is used to communicate between the components.
+-> a subject is both observable and observer.
+-> basically it is the way that we can set the bahaviour that is like an observable but we cak also subscribe as an observer.
+Note: Observables are to observe the values of data over time.
 
