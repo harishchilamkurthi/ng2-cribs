@@ -283,7 +283,7 @@ CREATING A CUSTOM PIPE:
 -> lets create a new service in our service folder
 	cd src/app/services <-|
 	ng g service util <-|
-Note: When a service is created, we get a warning saying "service is created but not provided". for that we need to import the service in app.module.ts.
+Note: When a service is created, we get a warning saying "service is created but not provided". for that we need to import the service in app.module.ts and add this service in providers.
 
 
 
