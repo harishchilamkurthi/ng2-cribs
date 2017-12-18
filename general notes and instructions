@@ -264,5 +264,37 @@ Ex: 	<div *ngFor ="let crib of cribs | orderBy:"price">
   ANGULAR 2 doesnt come with its orderby pipe. so we have to implement this ourself.
 
 
+CREATING A CUSTOM PIPE:
+
+-> first add a sortfield array to the existing component.
+	  error: string = '';
+	  sortField: string = 'price';
+	  sortDirection: string = 'asc';
+	  sortFields: Array<string> = [
+	    'address',
+	    'area',
+	    'bathrooms',
+	    'bedrooms',
+	    'price',
+	    'type'
+	  ];
+-> we need to use a service to capitalize the first letter before it shows on the screen.
+ 		STOP SERVER
+-> lets create a new service in our service folder
+	cd src/app/services <-|
+	ng g service util <-|
+Note: When a service is created, we get a warning saying "service is created but not provided". for that we need to import the service in app.module.ts.
 
 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
