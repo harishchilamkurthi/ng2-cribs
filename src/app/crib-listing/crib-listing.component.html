@@ -50,9 +50,10 @@
     
     
     
-    <div *ngFor="let crib of cribs" class="col-sm-4" | sortBy:[sortField]>
+    <div *ngFor="let crib of cribs" class="col-sm-4" | sortBy:[sortField, sortDirection]>
                                                               //sortfield is accessed here because we assigned sortfield to ngModel.
-    
+                                                              //sortDirection defaultly showing as asc
+                                                              //so asc is initially passed as second argument into pipe which is controlled by click event.
     // here, we used ngFor directive which loops the condition specified(targetting all the addresses in cribs collection using crib local variable), instead of writing all the addresses individually.
     // we can also target other elements like price and type.
 
