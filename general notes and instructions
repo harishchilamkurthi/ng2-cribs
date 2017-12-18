@@ -246,3 +246,23 @@ The new challenge is, when the form is submitted, the data in the form is not ge
  |-> after addCrib() is called, we want the form to be cleared. for that we have to get hold on form in component class.
  |-> we have to call ViewChild decorator.
  	this.newCribForm.reset();  //resets the existing form
+
+
+ADDING A PIPE:
+
+-> It would be great if we have some way to sort these cards/listings which takes the order that we give within the array and set default price from high to low or may be the property type.
+
+For that we make use of ANGULAR PIPE(filters)
+
+Note: Filter is something that is applied to repeater and we could do something like OrderBy filter with pipe symbol ...."|"
+
+Ex: 	<div *ngFor ="let crib of cribs | orderBy:"price">
+					  //orderby is filter
+					  //price is the argument:gives the price from high to low
+	</div>
+
+  ANGULAR 2 doesnt come with its orderby pipe. so we have to implement this ourself.
+
+
+
+
