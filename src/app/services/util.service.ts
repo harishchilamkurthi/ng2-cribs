@@ -5,7 +5,7 @@ export class UtilService {
 
   constructor() { }
 
-  capitalize(word): string {
+  public capitalize(word): string {
     return word.charAt(0).toUpperCase() + word.substring(1);
   }
 }
