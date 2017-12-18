@@ -18,8 +18,8 @@ export class CribListingComponent implements OnInit { //
 	cribs: Array<any> = [];
 	//the cribs injection file is no more. it has been renamed to json file.
 	error: string = '';
-	 sortField: string = 'price';
-	 sortDirection: string = 'asc';
+	 sortField: string = 'price'; //price is default
+	 sortDirection: string = 'asc'; //asc would be default
 	 sortFields: Array<string> = [
 	    'address',
 	    'area',
