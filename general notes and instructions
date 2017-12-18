@@ -296,7 +296,15 @@ Output: now we have sort list and drop down to select all the attributes which w
 	 mkdir pipes
 	 ng g pipe sort-by
 	
-
+    sort-by.pipe.ts:
+    -> pipe decorator(@pipe) is making the classs SortByPipe as an angular pipe. i.e., its attaching some metadata to it.
+    										 i.e., it can do the things that pipes need to do.
+    
+    -> when we create pipes, we have to have the class PipeTransform which inturn says that needs to have transform() within the pipe, which is the method that is responsible for whatever the pipe is supposed to do.
+    -> in our case, pipe is meant to sort the valuesand logis is going to be in transform().
+    
+    
+    
 
 
 
