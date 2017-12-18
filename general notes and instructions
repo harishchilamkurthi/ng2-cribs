@@ -304,11 +304,24 @@ Output: now we have sort list and drop down to select all the attributes which w
     -> in our case, pipe is meant to sort the valuesand logis is going to be in transform().
     
     
-    
+    //CONDITION: compare function has 2 return 1 of 3 numbers
+          //return 1      i.e., a>b
+          //return -1      i.e., a<b
+          //return 0      i.e., a=b
+	  
+    -> this pipe needs to be included in app.module.ts
+    -> [(ngModel)] is a 2 way data binding directive that binds an input , select , textarea (or custom form control) to a property on the scope. 
+	2way data binding [(ngModel)] which is sortfield is bound to the value, because sortfield is bound to our select list, within this we have options with values that are bound to them. so the sortfield is going to puck what ever option we select and passed the pipe argument.
+    -> we can sort the fields with price.
+    |->but what if we want to sort from high from low? 
+    	 -> so we want something which says order them in ASC or DESC. like toggle which changes the way to filter.
 
 
 
 
+
+-> we need to put in some way to modify what returns. 
+-> basically, it is going to be in binary(asc or desc) and because the sort function deals with 1 or -1 we need a MODIFIER for these.
 
 
 
