@@ -14,6 +14,13 @@ export class SortByPipe implements PipeTransform {
     
     if(array){
       let sortField = args[0];
+      let sortDirection = args[1];
+    
+      let modifier = 1;
+    //We need to change the direction of modifier if we are doing desc.
+      if (sortDirection == "desc"){
+        modifier = -1;
+      }
       array.sort((a:any, b:any) => {
                 //compare function, needs 2 parameters with type any which represents 2 elements in an array.
        
