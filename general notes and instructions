@@ -325,10 +325,9 @@ Output: now we have sort list and drop down to select all the attributes which w
 
 
 
-
-
-
- 
+ //sortDirection defaultly showing as asc
+//asc is initially passed as second argument into pipe which is controlled by click event.
+the modification of asc/desc methos is coming from sort-by.pipe.ts because sort comparison is only returning -1 or 1 or 0.
  
  
  
