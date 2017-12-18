@@ -284,6 +284,19 @@ CREATING A CUSTOM PIPE:
 	cd src/app/services <-|
 	ng g service util <-|
 Note: When a service is created, we get a warning saying "service is created but not provided". for that we need to import the service in app.module.ts and add this service in providers.
+      we need to inject the service utilService.
+      
+Output: now we have sort list and drop down to select all the attributes which we inserted.
+
+-> even though we have got our list here,, its not doing anything yet because, we have to put a PIPE to actually do the sorting.
+
+	 STOP the APP.
+	 GO ONE LEVEL UP to APP folder.
+	 
+	 mkdir pipes
+	 ng g pipe sort-by
+	
+
 
 
 
